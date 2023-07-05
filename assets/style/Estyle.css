@@ -1,0 +1,22 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(225deg,red,white,darkblue);
+}
+
+.glass{
+    position: absolute;
+    width:85%;
+    height: 75%;
+    background: transparent;
+    box-shadow: 0 25px 45px black;
+    border-radius: 40px;
+    border: 2px solid darkgray;
+    border-right: 2px solid palegreen;
+    border-bottom: 2px solid palegreen;
+    backdrop-filter: blur(30px);
+}
+
