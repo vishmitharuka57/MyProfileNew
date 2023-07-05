@@ -6,6 +6,9 @@ body{
     min-height: 100vh;
     background: linear-gradient(225deg,red,white,darkblue);
 }
+.root{
+    --size :10vmin;
+}
 
 .glass{
     position: absolute;
@@ -20,3 +23,83 @@ body{
     backdrop-filter: blur(30px);
 }
 
+.loading-area {
+    position: absolute;
+    top: 90px;
+    left: 28px;
+    width:950px;
+    height: 80px;
+    display: flex;
+}
+.loading-word {
+    flex: 2 2 50px;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease-in-out;
+    animation: word 4s linear alternate infinite;
+}
+.loading-word:nth-child(2) {
+    animation-delay: .7s;
+}
+.loading-word:nth-child(3) {
+    animation-delay: 1.4s;
+}
+.loading-word:nth-child(4){
+    animation-delay: 2.1s;
+}
+.loading-word:nth-child(5){
+    animation-delay: 2.8s;
+}
+.loading-word:nth-child(6){
+    animation-delay: 3.5s;
+}
+
+.loading-word:nth-child(7){
+    animation-delay: 4.2s;
+}
+
+.loading-word:nth-child(8){
+    animation-delay: 4.9s;
+}
+
+.loading-word:nth-child(9){
+    animation-delay: 5.6s;
+}
+
+.loading-word:nth-child(10){
+    animation-delay:6.3s;
+}
+
+.loading-word:nth-child(11){
+    animation-delay: 7.0s;
+}
+
+.loading-word:nth-child(12){
+    animation-delay: 7.7s;
+}
+
+.loading-word:nth-child(13){
+    animation-delay: 8.4s;
+}
+.side {
+    position: absolute;
+    inset: 0;
+}
+.side:first-child {
+    transform: rotateY(-180deg) translateZ(25px);
+}
+.side:nth-child(2) {
+
+    transform: rotateX(90deg) translateZ(25px);
+    display: grid;
+    place-content: center;
+}
+.side:nth-child(2) span {
+    font-size: 90px;
+    color: white;
+}
+
+.word-style{
+    transform: rotateX(-90deg);
+}
